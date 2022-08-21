@@ -23,9 +23,10 @@ final class mysqli_wrapper
 	 * @throws Exception
 	 */
 	public function query(string $query, array $args = [], string $types = null): mysqli_result|false {
-		if ($types === null && $args !== []) //if we have arguments and no types are specified we act as if they were all strings
+		if ($types === null && $args !== []) { //if we have arguments and no types are specified we act as if they were all strings
 			$types = str_repeat('s', count($args));
-
+		}
+		
 		$stmt = $this->connection->prepare($query); //prepare the query
 
 		if (!$stmt) {
