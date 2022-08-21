@@ -1,8 +1,6 @@
 <?php
 declare(strict_types=1);
 
-namespace app\database;
-
 use Exception;
 use mysqli;
 use mysqli_result;
