@@ -4,7 +4,7 @@ This repository countains a MySQL prepared statements wrapper for PHP.
 
 # Usage
 
-```
+```php
 require __DIR__ . '/src/mysqli_wrapper.php';
 
 /* Configuration */
